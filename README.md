@@ -1,6 +1,6 @@
 ### Installation
 
-Before running *main.py*, please run:
+Before running **main.py**, please run:
 
 ```
 pip install -r requirements.txt
