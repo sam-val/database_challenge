@@ -1,0 +1,17 @@
+version: "3.0"
+
+services:
+  postgres:
+    container_name: postgres_local
+    image: postgres:latest
+    volumes:
+      - ./postgres/:/docker-entrypoint-initdb.d/
+    environment: {
+      POSTGRES_DB: benerator,
+      POSTGRES_USER: benerator,
+      POSTGRES_PASSWORD: benerator
+    }
+    ports:
+      - "35432:5432"
+
+
